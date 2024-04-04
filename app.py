@@ -4,6 +4,7 @@ from pymongo.server_api import ServerApi
 from bson.objectid import ObjectId
 import bcrypt
 import credentials
+from credentials import uri
 
 # Create a new client and connect to the server
 client = MongoClient(credentials.uri, server_api=ServerApi('1'))
